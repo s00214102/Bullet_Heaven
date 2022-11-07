@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Orb
+  - Fire
+  - Enemy
+  - Misc
+  - Destroyable
+  - FireDestroyable
+  - EarthDestroyable
+  - ElectricDestroyable
+  - IceDestroyable
+  - Health
+  - EnemySetup
+  - Ice
+  - Collectable
+  - DataManager
+  - CheckpointController
+  - Checkpoint
+  - CollectionManager
+  - Switch
+  - Ball
+  - EnemyBullet
+  - HiddenArea
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Trigger
+  - Water
+  - UI
+  - Player
+  - SolidOrbs
+  - Enemy
+  - Spawner
+  - PlayerBullet
+  - EnemyBullet
+  - Door
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Top
+    uniqueID: 1004641953
+    locked: 0

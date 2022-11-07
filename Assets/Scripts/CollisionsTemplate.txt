@@ -1,0 +1,32 @@
+    float damage;
+
+    Element element;
+
+    PrefabElement prefabElement;
+
+    private void Start()
+    {
+        prefabElement = GetComponent<PrefabElement>();
+
+        element = prefabElement.p_element;
+
+        damage = element.damage;
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+ 	    //-get the first collider hit
+            ContactPoint2D contact = col.contacts[0];
+	    Destroy(this.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Untagged"))
+        {
+
+        }
+    }
