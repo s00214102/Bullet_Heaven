@@ -16,8 +16,19 @@ public class GameManager : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("DataManager").TryGetComponent<DataManager>(out dataManager))
             dataManager.Load();
 
+        try
+        {
+            GameObject checkPointGO = GameObject.FindGameObjectWithTag("CheckpointController");
 
-        if (GameObject.FindGameObjectWithTag("CheckpointController").TryGetComponent<testCheckpoints>(out checkpoints)) { checkpoints.LoadCheckPoint(); }
+            if (checkPointGO != null)
+                if (checkPointGO.TryGetComponent<testCheckpoints>(out checkpoints))
+                    checkpoints.LoadCheckPoint(); 
+        }
+        catch
+        {
+            Debug.Log("No GameObject with tag 'CheckpointController' found.");
+        }
+        
 
         currentScene = SceneManager.GetActiveScene();
 
